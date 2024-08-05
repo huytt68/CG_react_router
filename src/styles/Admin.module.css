@@ -1,0 +1,33 @@
+.contain {
+    display: flex;
+}
+
+.sidebar {
+    flex: 1;
+    border: 1px solid;
+    height: 750px;
+    padding: 20px;
+}
+.sidebar-element {
+    border: 1px solid;
+    padding: 12px;
+    text-align: center;
+}
+
+.main {
+    flex: 5;
+    display: block;
+}
+
+.menu {
+    height: 60px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    border: 1px solid;
+    height: 690px;
+}

@@ -6,6 +6,11 @@ import Register from "./components/Register";
 import Home from "./components/Home";
 import Orders from "./components/Orders";
 import Product from "./components/Product";
+import Admin from "./components/Admin";
+import Students from "./components/Students";
+import DetailStudent from "./components/DetailStudent";
+import AddStudent from "./components/AddStudent";
+import Users from "./components/Users";
 
 function App() {
   return (
@@ -16,6 +21,13 @@ function App() {
         <Route path={'/home'} element={<Home/>}>
           <Route path={''} element={<Product/>}/>
           <Route path={'orders'} element={<Orders/>}/>
+        </Route>
+        <Route path={'/admin'} element={<Admin/>}>
+          <Route path={''} element={<Product/>}/>
+          <Route path={'students'} element={<Students/>}/>
+          <Route path={'users'} element={<Users/>}/>
+          <Route path={'students/detail/:id'} element={<DetailStudent/>}/>
+          <Route path={'students/add'} element={<AddStudent/>}/>
         </Route>
       </Routes>
     </>

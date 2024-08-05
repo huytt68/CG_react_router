@@ -7,11 +7,19 @@
 .logo {
     flex: 1;
     border: 1px solid;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner {
     flex: 4;
     border: 1px solid;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
@@ -38,6 +46,9 @@
 .sidebar {
     flex: 1;
     border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .content {
     flex: 5;
