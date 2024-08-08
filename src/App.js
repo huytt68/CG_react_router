@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import {Route, Routes} from "react-router-dom";
-import Login from "./components/Login";
-import Register from "./components/Register";
-import Home from "./components/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Home from "./pages/Home";
 import Orders from "./components/Orders";
 import Product from "./components/Product";
-import Admin from "./components/Admin";
+import Admin from "./pages/Admin";
 import Students from "./components/Students";
 import DetailStudent from "./components/DetailStudent";
 import AddStudent from "./components/AddStudent";
@@ -24,8 +23,8 @@ function App() {
         </Route>
         <Route path={'/admin'} element={<Admin/>}>
           <Route path={''} element={<Product/>}/>
-          <Route path={'students'} element={<Students/>}/>
           <Route path={'users'} element={<Users/>}/>
+          <Route path={'students'} element={<Students/>}/>
           <Route path={'students/detail/:id'} element={<DetailStudent/>}/>
           <Route path={'students/add'} element={<AddStudent/>}/>
         </Route>
